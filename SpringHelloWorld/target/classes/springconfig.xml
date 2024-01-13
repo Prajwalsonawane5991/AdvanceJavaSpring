@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	
+	<!--  <bean id="p1" class="com.demo.model.Product" scope="prototype">
+     <property name="pid" value="10"></property>
+     <property name="pname" value="chair"></property>
+     <property name="price" value="1234.23"></property>
+	</bean>
+	<bean id="p2" class="com.demo.model.Product" scope="prototype">
+     <property name="pid" value="11"></property>
+     <property name="pname" value="Table"></property>
+     <property name="price" value="1235.00"></property>
+	</bean>
+	
+	<bean id="prd11" class="com.demo.model.Product" >
+	<constructor-arg type="int" value="22"></constructor-arg>
+	<constructor-arg type="String" value="PC"></constructor-arg>
+	<constructor-arg type="double" value="2324.98"></constructor-arg>
+	</bean>-->
+	<bean id="ps" class="com.demo.model.Productstore"  autowire="constructor" >
+	<constructor-arg index="0" value="balaji traders"></constructor-arg>
+	
+	</bean> 
+<bean id="prd" class="com.demo.model.Product" >
+	<constructor-arg index="0" value="22"></constructor-arg>
+	<constructor-arg index="1" value="PC"></constructor-arg>
+	<constructor-arg index="2" value="2324.98"></constructor-arg>
+	</bean>
+	<bean id="ps1" class="com.demo.model.Productstore"  autowire="constructor" >
+	<constructor-arg index="0" value="balaji traders"></constructor-arg>
+	<constructor-arg index="1" value="pune"></constructor-arg>
+	
+	</bean> 
+	
+	<bean id="prd11" class="com.demo.model.Product" >
+	<constructor-arg type="int" value="23"></constructor-arg>
+	<constructor-arg type="String" value="PC2"></constructor-arg>
+	<constructor-arg type="double" value="232422.98"></constructor-arg>
+	</bean>
+	
+	</beans>
